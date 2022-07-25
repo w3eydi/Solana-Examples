@@ -1,3 +1,4 @@
 **/.idea
 **/src/program/target
 .DS_Store
+**/node_modules

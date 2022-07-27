@@ -1,4 +1,4 @@
-# solana-transaction account console
+# solana account airdrop 
 
 This example works in the console.
 

@@ -6,7 +6,12 @@
 
 ![](images/solana-transaction-1.png)
 
-## [solana-transaction account console example](persisting-data)
+## [solana account airdrop console example](persisting-data)
 ---
 
 ![](images/show-account.png)
+
+## [solana transaction console example](transfer-sol)
+---
+
+![](images/transfer-sol.png)

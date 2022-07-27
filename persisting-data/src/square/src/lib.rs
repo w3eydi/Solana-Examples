@@ -19,9 +19,9 @@ fn process_instruction(
     let accounts_iter = &mut accounts.iter();
     let account = next_account_info(accounts_iter)?;
 
-    if(account.owner != program_id) {
+    if account.owner != program_id {
         msg!("Account doesn't have correct program id!");
-        Err(ProgramError::IncorrectProgramId)
+        return Err(ProgramError::IncorrectProgramId);
     }
 
     msg!("--- Debug Output: ---");

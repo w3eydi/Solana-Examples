@@ -19,9 +19,9 @@ fn process_instruction(
     let accounts_iter = &mut accounts.iter();
     let account = next_account_info(accounts_iter)?;
 
-    if(account.owner != program_id) {
+    if account.owner != program_id {
         msg!("Account doesn't have correct program id!");
-        Err(ProgramError::IncorrectProgramId)
+        return Err(ProgramError::IncorrectProgramId);
     }
 
     msg!("--- Debug Output: ---");
@@ -32,7 +32,7 @@ fn process_instruction(
 
     msg!("\nAdding 1 to sum...\n");
 
-    let mut math_stuff = MathStuffSum::try_from_slice(&account.data.borrow())?;
+    let mut math_stuff = SumOfMath::try_from_slice(&account.data.borrow())?;
     math_stuff.sum += 1;
     math_stuff.serialize(&mut &mut account.data.borrow_mut()[..])?;
     msg!("Current sum is now: {}", math_stuff.sum);

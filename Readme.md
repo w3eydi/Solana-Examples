@@ -6,7 +6,7 @@
 
 ![](images/solana-transaction-1.png)
 
-## [solana-transaction account console example](solana-transaction)
+## [solana-transaction account console example](persisting-data)
 ---
 
 ![](images/show-account.png)

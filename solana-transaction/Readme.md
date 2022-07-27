@@ -1,4 +1,4 @@
-# solana-transaction
+# solana console
 
 This example works in the console.
 

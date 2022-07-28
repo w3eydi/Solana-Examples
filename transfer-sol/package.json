@@ -18,7 +18,7 @@
     "build": "./_cicd/cicd.sh build",
     "deploy": "./_cicd/cicd.sh deploy",
     "reset-and-build": "./_cicd/cicd.sh reset-and-build",
-    "simulation": "ts-node ./client/main.ts"
+    "simulation": "ts-node ./src/client/main.ts"
   },
   "dependencies": {
       "@solana/web3.js": "^1.33.0",
